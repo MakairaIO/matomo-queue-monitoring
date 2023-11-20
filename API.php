@@ -12,7 +12,6 @@ use Exception;
 use Piwik\Plugins\QueuedTracking\Queue;
 use Piwik\Plugins\QueuedTracking\SystemCheck;
 
-use function implode;
 use function sprintf;
 
 /**
