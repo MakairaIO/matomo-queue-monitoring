@@ -1,0 +1,29 @@
+{
+    "name": "QueueMonitoring",
+    "description": "Prometheus export for QueuedTracking queue status",
+    "version": "1.0.0",
+    "theme": false,
+    "require": {
+        "matomo": "^4.0 || ^5.0"
+    },
+    "authors": [
+        {
+            "name": "Matomo",
+            "email": "",
+            "homepage": ""
+        }
+    ],
+    "support": {
+        "email": "",
+        "issues": "",
+        "forum": "",
+        "irc": "",
+        "wiki": "",
+        "source": "",
+        "docs": "",
+        "rss": ""
+    },
+    "homepage": "",
+    "license": "GPL v3+",
+    "keywords": []
+}
