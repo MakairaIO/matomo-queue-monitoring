@@ -40,15 +40,15 @@ class API extends \Piwik\Plugin\API
         $manager = Queue\Factory::makeQueueManager($backend);
         $queues  = $manager->getAllQueues();
 
-        $result = [];
+        $result = '';
         foreach ($queues as $queue) {
-            $result[] = sprintf(
-                'matomo_queued_requests{id=%u} %u',
+            $result .= sprintf(
+                "matomo_queued_requests{id=\"%u\"} %u\n",
                 $queue->getId(),
                 $queue->getNumberOfRequestSetsInQueue(),
             );
         }
 
-        return implode("\n", $result);
+        return $result;
     }
 }
